@@ -23,7 +23,12 @@ public class Main {
         groza.setBookYear(1861);
         System.out.println("groza.getBookYear = " + groza.getBookYear());
 
-
+        System.out.println();
+        Author turgenev = new Author("Иван ", "Тургенев ");
+        Book mumu = new Book("Муму", turgenev.getAuthorName() + turgenev.getAuthorSurname(), 1852);
+        System.out.println("mumu.bookName = " + mumu.getBookName());
+        System.out.println("mumu.bookAuthor = " + mumu.getBookAuthor());
+        System.out.println("mumu.bookYear = " + mumu.getBookYear());
 
 
     }
